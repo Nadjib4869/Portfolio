@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/desk.jpg";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -31,40 +31,45 @@ const imageAltText = "desktop with books and laptop";
  */
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "LinkedIn Clone",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Created a LinkedIn clone using React JS, Redux, Firebase, and Material UI. Users can sign in, post, and like posts.",
+    url: "https://github.com/Nadjib4869/Linkedin-Clone",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Realtime Chat App",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Developed a realtime chat application using React JS, Firebase, and Material UI. Users can sign in, create chat rooms, and send messages.",
+    url: "https://github.com/Nadjib4869/Realtime-Chat",
   },
   {
-    title: "My Resume Site",
+    title: "PromptSphere",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Developed a web application that helps you discover, create and share creative prompts, using Nextjs 13 and Tailwindcss ",
+    url: "https://github.com/Nadjib4869/PromptSphere",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "Weather App",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "Developed a weather application using React JS, OpenWeather API, and Material UI. Users can search for a city and view the current weather.",
+    url: "https://github.com/Nadjib4869/Weather-web-app",
   },
 ];
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="portfolio" style={{ backgroundColor: "#1f2833" }}>
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
             src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
+            style={{
+              height: "90%",
+              width: "100%",
+              objectFit: "cover",
+              animation: "1s ease-out 0s 1 slideInLeft",
+            }}
             alt={imageAltText}
           />
         </div>

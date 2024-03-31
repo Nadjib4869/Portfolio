@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/Leafs.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,19 +24,19 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "I'm a Computer Science student studying at The Higher School of Computer Science 08 May 1945 Sidi Bel Abbes, Algeria. I enjoy creating unique and interactive user interfaces in creative ways.";
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "HTML 5",
+  "CSS 3",
+  "Tailwind CSS",
+  "JavaScript",
+  "React JS",
+  "Next JS 14",
 ];
 
 /**
@@ -45,7 +45,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about creating interactive user interfaces that are both visually appealing and functional. I enjoy working with React JS and Tailwind CSS to create unique and responsive designs. I am always looking to learn new technologies and improve my skills.";
 
 const About = () => {
   return (
@@ -53,11 +53,11 @@ const About = () => {
       <img className="background" src={image} alt={imageAltText} />
       <div
         style={{
-          backgroundColor: "white",
+          backgroundColor: "transparent",
           width: "50%",
-          padding: "4rem",
+          padding: "4rem",color: "#66fcf1",
           margin: "3rem auto",
-          textAlign: "center",
+          textAlign: "center",  
         }}
       >
         <h2>About Myself</h2>
